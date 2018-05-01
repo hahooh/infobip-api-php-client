@@ -2,8 +2,8 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\model\nc\query\NumberContextResponse;
-use infobip\api\model\nc\query\NumberContextResponseDetails;
+use infobip\api\smsMessage\model\nc\query\NumberContextResponse;
+use infobip\api\smsMessage\model\nc\query\NumberContextResponseDetails;
 
 $responseBody = '{
    "results":[

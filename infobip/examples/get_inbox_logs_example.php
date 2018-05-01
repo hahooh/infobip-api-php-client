@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\client\GetReceivedSmsLogs;
-use infobip\api\configuration\BasicAuthConfiguration;
-use infobip\api\model\sms\mo\logs\GetReceivedSmsLogsExecuteContext;
+use infobip\api\smsMessage\client\GetReceivedSmsLogs;
+use infobip\api\smsMessage\configuration\BasicAuthConfiguration;
+use infobip\api\smsMessage\model\sms\mo\logs\GetReceivedSmsLogsExecuteContext;
 
 // Initializing GetReceivedSmsLogs client with appropriate configuration
 $client = new GetReceivedSmsLogs(new BasicAuthConfiguration(USERNAME, PASSWORD));

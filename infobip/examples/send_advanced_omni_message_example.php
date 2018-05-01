@@ -2,14 +2,14 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\client\SendAdvancedOmniMessage;
-use infobip\api\configuration\BasicAuthConfiguration;
-use infobip\api\model\omni\Destination;
-use infobip\api\model\omni\send\Language;
-use infobip\api\model\omni\send\OmniAdvancedRequest;
-use infobip\api\model\omni\send\SmsData;
-use infobip\api\model\omni\send\ViberData;
-use infobip\api\model\omni\To;
+use infobip\api\smsMessage\client\SendAdvancedOmniMessage;
+use infobip\api\smsMessage\configuration\BasicAuthConfiguration;
+use infobip\api\smsMessage\model\omni\Destination;
+use infobip\api\smsMessage\model\omni\send\Language;
+use infobip\api\smsMessage\model\omni\send\OmniAdvancedRequest;
+use infobip\api\smsMessage\model\omni\send\SmsData;
+use infobip\api\smsMessage\model\omni\send\ViberData;
+use infobip\api\smsMessage\model\omni\To;
 
 
 $client = new SendAdvancedOmniMessage(new BasicAuthConfiguration(USERNAME, PASSWORD));

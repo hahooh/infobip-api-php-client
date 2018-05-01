@@ -2,12 +2,12 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\client\SendMultipleTextualSmsAdvanced;
-use infobip\api\configuration\BasicAuthConfiguration;
-use infobip\api\model\Destination;
-use infobip\api\model\sms\mt\send\Language;
-use infobip\api\model\sms\mt\send\Message;
-use infobip\api\model\sms\mt\send\textual\SMSAdvancedTextualRequest;
+use infobip\api\smsMessage\client\SendMultipleTextualSmsAdvanced;
+use infobip\api\smsMessage\configuration\BasicAuthConfiguration;
+use infobip\api\smsMessage\model\Destination;
+use infobip\api\smsMessage\model\sms\mt\send\Language;
+use infobip\api\smsMessage\model\sms\mt\send\Message;
+use infobip\api\smsMessage\model\sms\mt\send\textual\SMSAdvancedTextualRequest;
 
 // Initializing SendMultipleTextualSmsAdvanced client with appropriate configuration
 $client = new SendMultipleTextualSmsAdvanced(new BasicAuthConfiguration(USERNAME, PASSWORD));

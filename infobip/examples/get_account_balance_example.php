@@ -1,7 +1,7 @@
 <?php
 
-use infobip\api\client\GetAccountBalance;
-use infobip\api\configuration\BasicAuthConfiguration;
+use infobip\api\smsMessage\client\GetAccountBalance;
+use infobip\api\smsMessage\configuration\BasicAuthConfiguration;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 

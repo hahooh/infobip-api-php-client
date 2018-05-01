@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\client\GetSentSmsDeliveryReports;
-use infobip\api\configuration\BasicAuthConfiguration;
-use infobip\api\model\sms\mt\reports\GetSentSmsDeliveryReportsExecuteContext;
+use infobip\api\smsMessage\client\GetSentSmsDeliveryReports;
+use infobip\api\smsMessage\configuration\BasicAuthConfiguration;
+use infobip\api\smsMessage\model\sms\mt\reports\GetSentSmsDeliveryReportsExecuteContext;
 
 // Initializing GetSentSmsDeliveryReports client with appropriate configuration
 $client = new GetSentSmsDeliveryReports(new BasicAuthConfiguration(USERNAME, PASSWORD));

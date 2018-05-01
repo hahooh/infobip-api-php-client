@@ -1,0 +1,163 @@
+<?php
+namespace infobip\api\smsMessage\model\nc\logs;
+
+/**
+ * This is a generated class and is not intended for modification!
+ */
+class NumberContextLog implements \JsonSerializable
+{
+    private $bulkId;
+    private $messageId;
+    private $to;
+    /**
+     * @var \infobip\api\smsMessage\model\FormattedDateTime
+     */
+    private $sentAt;
+    /**
+     * @var \infobip\api\smsMessage\model\FormattedDateTime
+     */
+    private $doneAt;
+    private $mccMnc;
+    /**
+     * @var \infobip\api\smsMessage\model\Price
+     */
+    private $price;
+    /**
+     * @var \infobip\api\smsMessage\model\Status
+     */
+    private $status;
+    /**
+     * @var \infobip\api\smsMessage\model\Error
+     */
+    private $error;
+
+
+    public function setBulkId($bulkId)
+    {
+        $this->bulkId = $bulkId;
+    }
+    public function getBulkId()
+    {
+        return $this->bulkId;
+    }
+
+    public function setMessageId($messageId)
+    {
+        $this->messageId = $messageId;
+    }
+    public function getMessageId()
+    {
+        return $this->messageId;
+    }
+
+    public function setTo($to)
+    {
+        $this->to = $to;
+    }
+    public function getTo()
+    {
+        return $this->to;
+    }
+
+    /**
+     * @param \DateTime $sentAt
+     */
+    public function setSentAt($sentAt)
+    {
+        $this->sentAt = new \infobip\api\smsMessage\model\FormattedDateTime($sentAt);
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getSentAt()
+    {
+        return $this->sentAt;
+    }
+
+    /**
+     * @param \DateTime $doneAt
+     */
+    public function setDoneAt($doneAt)
+    {
+        $this->doneAt = new \infobip\api\smsMessage\model\FormattedDateTime($doneAt);
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDoneAt()
+    {
+        return $this->doneAt;
+    }
+
+    public function setMccMnc($mccMnc)
+    {
+        $this->mccMnc = $mccMnc;
+    }
+    public function getMccMnc()
+    {
+        return $this->mccMnc;
+    }
+
+    /**
+     * @param \infobip\api\smsMessage\model\Price $price
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+
+    /**
+     * @return \infobip\api\smsMessage\model\Price
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param \infobip\api\smsMessage\model\Status $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+
+    /**
+     * @return \infobip\api\smsMessage\model\Status
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param \infobip\api\smsMessage\model\Error $error
+     */
+    public function setError($error)
+    {
+        $this->error = $error;
+    }
+
+    /**
+     * @return \infobip\api\smsMessage\model\Error
+     */
+    public function getError()
+    {
+        return $this->error;
+    }
+
+
+  /**
+   * (PHP 5 &gt;= 5.4.0)<br/>
+   * Specify data which should be serialized to JSON
+   * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
+   * @return mixed data which can be serialized by <b>json_encode</b>,
+   * which is a value of any type other than a resource.
+   */
+  function jsonSerialize()
+  {
+      return get_object_vars($this);
+  }
+}

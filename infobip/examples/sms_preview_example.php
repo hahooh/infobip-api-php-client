@@ -2,10 +2,10 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\client\PreviewSms;
-use infobip\api\configuration\BasicAuthConfiguration;
-use infobip\api\model\sms\mt\send\preview\Preview;
-use infobip\api\model\sms\mt\send\preview\PreviewRequest;
+use infobip\api\smsMessage\client\PreviewSms;
+use infobip\api\smsMessage\configuration\BasicAuthConfiguration;
+use infobip\api\smsMessage\model\sms\mt\send\preview\Preview;
+use infobip\api\smsMessage\model\sms\mt\send\preview\PreviewRequest;
 
 // Initializing PreviewSms client with appropriate configuration
 $client = new PreviewSms(new BasicAuthConfiguration(USERNAME, PASSWORD));

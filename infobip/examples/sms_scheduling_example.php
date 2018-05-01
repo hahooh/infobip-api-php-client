@@ -2,25 +2,25 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\client\SendMultipleTextualSmsAdvanced;
-use infobip\api\client\GetBulks;
-use infobip\api\client\RescheduleBulk;
-use infobip\api\client\GetBulkStatus;
-use infobip\api\client\ManageBulkStatus;
-use infobip\api\configuration\BasicAuthConfiguration;
-use infobip\api\model\Destination;
-use infobip\api\model\sms\mt\bulks\BulkRequest;
-use infobip\api\model\sms\mt\bulks\BulkResponse;
-use infobip\api\model\sms\mt\bulks\GetBulksExecuteContext;
-use infobip\api\model\sms\mt\bulks\RescheduleBulkExecuteContext;
-use infobip\api\model\sms\mt\bulks\status\BulkStatus;
-use infobip\api\model\sms\mt\bulks\status\BulkStatusResponse;
-use infobip\api\model\sms\mt\bulks\status\GetBulkStatusExecuteContext;
-use infobip\api\model\sms\mt\bulks\status\ManageBulkStatusExecuteContext;
-use infobip\api\model\sms\mt\bulks\status\UpdateStatusRequest;
-use infobip\api\model\sms\mt\send\Message;
-use infobip\api\model\sms\mt\send\SMSResponse;
-use infobip\api\model\sms\mt\send\textual\SMSAdvancedTextualRequest;
+use infobip\api\smsMessage\client\SendMultipleTextualSmsAdvanced;
+use infobip\api\smsMessage\client\GetBulks;
+use infobip\api\smsMessage\client\RescheduleBulk;
+use infobip\api\smsMessage\client\GetBulkStatus;
+use infobip\api\smsMessage\client\ManageBulkStatus;
+use infobip\api\smsMessage\configuration\BasicAuthConfiguration;
+use infobip\api\smsMessage\model\Destination;
+use infobip\api\smsMessage\model\sms\mt\bulks\BulkRequest;
+use infobip\api\smsMessage\model\sms\mt\bulks\BulkResponse;
+use infobip\api\smsMessage\model\sms\mt\bulks\GetBulksExecuteContext;
+use infobip\api\smsMessage\model\sms\mt\bulks\RescheduleBulkExecuteContext;
+use infobip\api\smsMessage\model\sms\mt\bulks\status\BulkStatus;
+use infobip\api\smsMessage\model\sms\mt\bulks\status\BulkStatusResponse;
+use infobip\api\smsMessage\model\sms\mt\bulks\status\GetBulkStatusExecuteContext;
+use infobip\api\smsMessage\model\sms\mt\bulks\status\ManageBulkStatusExecuteContext;
+use infobip\api\smsMessage\model\sms\mt\bulks\status\UpdateStatusRequest;
+use infobip\api\smsMessage\model\sms\mt\send\Message;
+use infobip\api\smsMessage\model\sms\mt\send\SMSResponse;
+use infobip\api\smsMessage\model\sms\mt\send\textual\SMSAdvancedTextualRequest;
 
 // Initializing clients with appropriate configuration
 $configuration = new BasicAuthConfiguration(USERNAME, PASSWORD);

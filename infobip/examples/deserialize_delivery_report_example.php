@@ -2,8 +2,8 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\model\sms\mt\reports\SMSReport;
-use infobip\api\model\sms\mt\reports\SMSReportResponse;
+use infobip\api\smsMessage\model\sms\mt\reports\SMSReport;
+use infobip\api\smsMessage\model\sms\mt\reports\SMSReportResponse;
 
 $responseBody = '{
   "results": [

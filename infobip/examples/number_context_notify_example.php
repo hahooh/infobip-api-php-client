@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\client\NumberContextNotify;
-use infobip\api\configuration\BasicAuthConfiguration;
-use infobip\api\model\nc\notify\NumberContextRequest;
+use infobip\api\smsMessage\client\NumberContextNotify;
+use infobip\api\smsMessage\configuration\BasicAuthConfiguration;
+use infobip\api\smsMessage\model\nc\notify\NumberContextRequest;
 
 // Initializing NumberContextNotify client with appropriate configuration
 $client = new NumberContextNotify(new BasicAuthConfiguration(USERNAME, PASSWORD));

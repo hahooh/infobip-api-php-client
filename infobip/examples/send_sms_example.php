@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use infobip\api\client\SendSingleTextualSms;
-use infobip\api\configuration\BasicAuthConfiguration;
-use infobip\api\model\sms\mt\send\textual\SMSTextualRequest;
+use infobip\api\smsMessage\client\SendSingleTextualSms;
+use infobip\api\smsMessage\configuration\BasicAuthConfiguration;
+use infobip\api\smsMessage\model\sms\mt\send\textual\SMSTextualRequest;
 
 // Initializing SendSingleTextualSms client with appropriate configuration
 $client = new SendSingleTextualSms(new BasicAuthConfiguration(USERNAME, PASSWORD));
